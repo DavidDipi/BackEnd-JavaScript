@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+}
+
+.calculadora{
+    background:gray;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: .5rem;
+    box-shadow: 0 0 5px black;
+}
+
+.pantalla{
+    grid-column: 1/5;
+    background: rgb(173, 173, 173);
+    padding: 1rem;
+    font-size: 3rem;
+    color: black;
+    text-align: right;
+    border-radius: .5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.boton{
+    background:rgb(34, 31, 31);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.boton:hover{
+    background: #74ebd5; 
+    color: rgb(255, 251, 251);
+}
+
+#cero, #limpiar{
+    grid-column: span 2;
+}
+
+#igual{
+    background: rgb(150, 150, 255);
+}
+
+#igual:hover{
+    background: #2cea8b;
+}
+
+#limpiar{
+    background: orange;
+}
+
+#borrar{
+    background: rgb(255, 99, 99);
+}
+
