@@ -1,0 +1,124 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Valores globales */
+:root{
+    --color-primary:rgb(26, 34, 32);
+    --color-secundary: rgb(17, 216, 173);
+    --color-tertiary: rgb(163, 26, 26);
+} 
+
+/* Estilos del cuerpo */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-primary);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del reloj */
+.reloj{
+    width: 350px;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../img/reloj.png");
+    background-size: cover;
+
+    border: 1rem solid var(--color-secundary);
+    border-radius: 50vh;
+    box-shadow: inset 0px 0px 20px 5px var(--color-secundary);
+}
+
+/* Contenido interno del reloj */ 
+.reloj::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-secundary);
+    border-radius: 50vh;
+    z-index: 100;
+}
+
+/* Estilos de las manecillas */ 
+.hora{
+    width: 140px;
+    height: 140px;
+}
+
+.hora::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background: var(--color-secundary);
+    z-index: 10;
+    border-radius: 50vh;
+}
+
+.minuto{
+    width: 220px;
+    height: 220px;
+}
+
+.minuto::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 130px;
+    background: var(--color-secundary);
+    z-index: 11;
+    border-radius: 50vh;
+}
+
+.segundo{
+    width: 250px;
+    height: 250px;
+}
+
+.segundo::before{
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background: var(--color-tertiary);
+    z-index: 12;
+    border-radius: 50vh;
+}
+
+.hora, .minuto, .segundo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+}
+
+/* Estilos del reloj */
+.clock{
+    margin-top: 20%;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 3rem;
+    color: var(--color-secundary);
+}
