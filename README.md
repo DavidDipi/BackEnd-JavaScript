@@ -7,3 +7,4 @@
 - Reloj Digital
 - Reloj Análogo
 - Reloj Digital + Reloj Análogo
+- Baile de esqueleto
