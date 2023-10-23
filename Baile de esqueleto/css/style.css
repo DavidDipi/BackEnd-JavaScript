@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Variables globales */
+:root{
+    --color-fondo: rgb(255, 85, 6);
+    --color-primary: rgb(255, 186, 20);
+}
+/* Estilos del cuerpo */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Estilos del esqueleto */
+.esqueletoOff{
+    width: 550px;
+    height: 600px;
+    background-color: var(--color-fondo);
+    border-radius: 1vh;
+    border: 0.2rem solid black;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url(../src/img/esqueleto1.png);
+
+}
+/* Intercambio de clases (imagen en movimiento) */
+.esqueletoOff.on{
+    background-image: url(../src/img/esqueleto2.gif);
+}
+
+.esqueletoOnOff{
+    margin-top: 2%;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 1vh;
+    border: 0.1rem solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+.esqueletoOnOff:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
