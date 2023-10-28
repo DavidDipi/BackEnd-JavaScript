@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.puntaje{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    background-color: rgb(198, 198, 198);
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    -webkit-mask-image: url("../img/estrella.svg");
+    mask-image: url("../img/estrella.svg");
+}
+
+.item.selec {
+    background-color: rgb(30, 69, 70);
+}
+
+.thanks{
+    margin-top: 5%;
+    color: white;
+}
