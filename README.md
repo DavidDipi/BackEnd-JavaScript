@@ -8,3 +8,4 @@
 - Reloj Análogo
 - Reloj Digital + Reloj Análogo
 - Baile de esqueleto
+- Sistema de puntaje
