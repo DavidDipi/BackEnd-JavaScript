@@ -9,3 +9,6 @@
 - Reloj Digital + Reloj Análogo
 - Baile de esqueleto
 - Sistema de puntaje
+- Menu
+- Toggle
+- Cronometro
