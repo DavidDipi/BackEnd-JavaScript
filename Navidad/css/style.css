@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --background: rgb(83, 200, 220)
+}
+
+body{
+    background-color: var(--background);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.tiempo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuentaRegresiva{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.msg{
+    color: red;
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+    font-weight: 500;
+}
+
+.sep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.cont{
+    font-size: 2rem;
+    color: white;
+    border: 2px solid white;
+    padding: 1% 40%;
+    border-radius: 30px;
+}
+
+.btns{display: flex; gap: 15px;}
+
+.btn-song{
+    margin-top: 25%;
+    background-color: gray;
+    padding: 15px 20px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-song.on{
+    background-color: red;
+}
+
+.papaNoelBaile{width: 50%;}
+
+.papaNoelOff{
+    width: 550px;
+    height: 600px;
+    background-color: var(--color-fondo);
+    border-radius: 1vh;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url(../img/papaNoel.png);
+    background-repeat: no-repeat;
+}
+
+.papaNoelOff.on{
+    background-image: url(../img/papaNoel.gif);
+}

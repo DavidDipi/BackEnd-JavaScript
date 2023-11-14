@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="cuentaRegresiva"></div>
+
+    <div class="container">
+        <div class="tiempo">            
+            <span class="msg" id="msg"></span>
+            <div class="cuentaRegresiva">
+                <div class="sep">
+                    <span class="dia cont">00</span>
+                    <p>D</p>
+                </div>
+                <div class="sep">
+                    <span class="hora cont">00</span>
+                    <p>H</p>
+                </div>
+                <div class="sep">
+                    <span class="minutos cont">00</span>
+                    <p>M</p>
+                </div>
+                <div class="sep">
+                    <span class="segundos cont">00</span>
+                    <p>S</p>
+                </div>
+            </div>
+            <div class="btns">
+                <div id="papaNoelPlay" class="papaNoelPlay btn-song">Play</div>
+                <div id="papaNoelStop" class="papaNoelStop btn-song">Pause</div>
+            </div>
+        </div>
+            
+        <div class="papaNoelBaile">
+            <div id="papaNoelOff" class="papaNoelOff"></div>
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
