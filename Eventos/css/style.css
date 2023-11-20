@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --background: #476cff;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eventos .title{
+    color: white;
+    margin-right: 5px;
+
+}
+
+.nav{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+}
+
+.nav .logo{
+    width: 50px;
+    height: 50px;
+}
+
+.eventos .formulario{
+    background-color: white;
+    padding: 3%;
+    border-radius: 20px;
+    width: 25%;
+
+}
+
+.eventos .formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.eventos .formulario form input{
+    margin-bottom: 4%;
+    border-color: var(--background);
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.eventos .formulario form .btn-submit{
+    background-color: var(--background);
+    color: white;
+    cursor: pointer;
+}
+
+.eventos .listaEventos{
+    margin-top: 2%;
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.eventos .listaEventos .evento{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border: 2px #476cff solid;
+    border-radius: 20px;
+    padding: 6%;
+    margin-bottom: 2%;
+
+}
+
+.eventos .listaEventos .evento .dias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventos .listaEventos .evento .dias .diasFaltantes{color: var(--background); font-size: 2em;}
+.eventos .listaEventos .evento .nombreEvento{font-size: 1em; font-weight: 700; overflow-wrap: break-word; word-wrap: break-word; max-width: 30%; min-width: 30%;}
+.eventos .listaEventos .evento .fechaEvento{font-size: 1em;}
+.eventos .listaEventos .evento .eliminar{
+    cursor: pointer;
+    background-color: #ff4747;
+    padding: 30% 20%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.eventos .listaEventos .evento .eliminar:hover{
+    background-color: #fff347;
+    color: black;
+}
+
+.footer{padding: 1%; text-align: center;}
